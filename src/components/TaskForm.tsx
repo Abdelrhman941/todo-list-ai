@@ -31,7 +31,7 @@ export const TaskForm: React.FC<TaskFormProps> = ({
   const [formData, setFormData] = useState({
     title: '',
     description: '',
-    priority: 'medium' as const,
+    priority: 'medium' as 'low' | 'medium' | 'high',
     category: '',
     dueDate: undefined as Date | undefined,
     tags: [] as string[],
